@@ -33,23 +33,18 @@ do
             '
             exit 0;;
         f)
-        echo "field,参数a的值$OPTARG"
         chooseFiled $OPTARG
         ;;
         s)
-        echo "status,参数b的值$OPTARG"
         chooseStatus $OPTARG
         ;;
         w)
-        echo "who,参数c的值$OPTARG"
         who=$OPTARG
         ;;
         b)
-        echo "body,参数d的值$OPTARG"
         body=$OPTARG
         ;;
         t)
-        echo "token,参数c的值$OPTARG"
         token=$OPTARG
         ;;
         ":")
