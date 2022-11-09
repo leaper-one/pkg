@@ -4,6 +4,16 @@ chooseFiled() {
         "ci") field="🦾";;
         "cd") field="🚢";;
         "package") field="📦";;
+        "config") field="🔧";;
+        "container") field="🐳";;
+        "test") field="🧪";;
+        "docs") field="📚";;
+        "style") field="💅";;
+        "refactor") field="🧹";;
+        "perf") field="🚀";;
+        "revert") field="⏪";;
+        "build") field="🏗️";;
+        "chore") field="🔩";;
         *) field="";;
     esac
 }
@@ -14,6 +24,10 @@ chooseStatus() {
         "failure") status="❌";;
         "pending") status="⏳";;
         "running") status="🏃";;
+        "sos") status="🆘";;
+        "canceled") status="🚫";;
+        "skipped") status="⏭";;
+        "error") status="🚨";;
         *) status="";;
     esac
 }
@@ -25,8 +39,8 @@ do
             Usage: exwht.sh [options]
             Options:
                 -h  help
-                -f  field, ci/cd/package
-                -s  status, success/failure/pending/running
+                -f  field, ci/cd/package/config/container/test/docs/style/refactor/perf/revert/build/chore
+                -s  status, success/failure/pending/running/sos/canceled/skipped/error
                 -w  who, will show in the message title
                 -b  body, message body
                 -t  token
