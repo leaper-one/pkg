@@ -74,7 +74,6 @@ do
 done
 
 requestBody="$field $status $who \n\n $body"
-echo $requestBody
 curl "https://webhook.exinwork.com/api/send?access_token=$token" \
 -XPOST -H 'Content-Type: application/json' \
 -d "{\"category\":\"PLAIN_TEXT\",\"data\":\"$requestBody\"}"
