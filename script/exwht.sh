@@ -14,6 +14,7 @@ chooseFiled() {
         "revert") field="⏪";;
         "build") field="🏗️";;
         "chore") field="🔩";;
+        "anounce") field="📢";;
         *) field="";;
     esac
 }
