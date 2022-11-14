@@ -15,6 +15,7 @@ chooseFiled() {
         "build") field="🏗️";;
         "chore") field="🔩";;
         "anounce") field="📢";;
+        "chat") field="💬";;
         *) field="";;
     esac
 }
