@@ -9,8 +9,8 @@ import (
 // SlidingWindowLimiter 滑动窗口限流器
 type SlidingWindowLimiter struct {
 	limit        int           // 窗口请求上限
-	window       int64         // 窗口时间大小
-	smallWindow  int64         // 小窗口时间大小
+	window       int64         // 窗口时间大小, 纳秒
+	smallWindow  int64         // 小窗口时间大小, 纳秒
 	smallWindows int64         // 小窗口数量
 	counters     map[int64]int // 小窗口计数器
 	mutex        sync.Mutex    // 避免并发问题
