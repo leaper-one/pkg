@@ -28,7 +28,7 @@ func OpenSQLiteDB(db_path string) *gorm.DB {
 		Logger: logger.Default.LogMode(logger.Silent),
 	})
 	for err != nil {
-		logx.Debugf("Open SQLite BD file, will retry in 5 seconds, DB file path is ", db_path)
+		logx.Debugf("Open SQLite DB file, will retry in 5 seconds, DB file path is %+v ", db_path)
 		time.Sleep(5 * time.Second)
 		db, err = gorm.Open(sqlite.Open(db_path), &gorm.Config{})
 	}
